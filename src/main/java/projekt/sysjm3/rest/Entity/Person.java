@@ -3,6 +3,7 @@ package projekt.sysjm3.rest.Entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	public int id;
 	@Column(name = "lastname", nullable = false)
 	public String lastName;
@@ -30,6 +31,10 @@ public class Person {
 //	public enum gender {
 //		MALE, FEMAIL
 //	};
+
+	public Person() {
+
+	}
 
 	public int getId() {
 		return id;
