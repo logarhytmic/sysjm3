@@ -22,7 +22,7 @@ public class WebController {
 		return "index";
 	}
 
-	@GetMapping("/persons")
+	@GetMapping("/listPerson")
 	public Iterable<Person> listAllPersons() {
 
 		return PersonRepository.findAll();
