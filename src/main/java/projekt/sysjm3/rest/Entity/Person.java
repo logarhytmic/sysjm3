@@ -1,37 +1,26 @@
 package projekt.sysjm3.rest.Entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
 
+
+
 @Data
 @Entity
 public class Person{
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+//	@GeneratedValue(strategy = GenerationType.AUTO)
 	public int id;
-
 	public String lastName;	
-	
 	public String firstName;
-
 	public int age;
-	
-	public int socialSecurityNumber;
-	
+	public char gender;
+	public long ssn;
 	public String cityOfResidence;
-
 	public String countryOfResicence;
-
-//	H2 gillar inte enum, oklart varför. 
-//
-//	public static enum gender {
-//		MALE, FEMAIL
-//	};
-//
 	
 	
     public Person(int id,String firstName, String lastName, int age, char gender, long ssn, String cityOfResidence, String countryOfResicence) {
