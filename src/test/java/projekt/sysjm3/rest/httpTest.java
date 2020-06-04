@@ -22,7 +22,7 @@ public class httpTest {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/index")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/Index")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("index")));
     }
 }
