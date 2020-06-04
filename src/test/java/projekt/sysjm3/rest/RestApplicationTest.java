@@ -15,12 +15,12 @@ import projekt.sysjm3.rest.Repository.PersonRepository;
 class RestApplicationTest {
 
 	@Autowired
-	private PersonRepository personRepo;
+	private static PersonRepository personRepo;
 
-	private Person person;
+	private static Person person;
 
 	@BeforeAll
-	public void beforeAllTests() {
+	public static void beforeAllTests() {
 
 
 
@@ -36,7 +36,6 @@ class RestApplicationTest {
 		person = new Person('4',"Susanna", "M", 20, 'm', 860215 + 3, "City", "Country");
 		personRepo.save(person);
 		
-
 		person = new Person('5',"Jonas", "Sjöstedt", 41, 'm', 860215 + 4, "Malmö", "Sweden");
 		personRepo.save(person);
 
