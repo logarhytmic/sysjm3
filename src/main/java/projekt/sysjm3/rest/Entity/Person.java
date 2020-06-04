@@ -31,7 +31,12 @@ public class Person {
 	}
 
 
-	Person() {
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public Person() {
 
 	}
 
@@ -78,5 +83,8 @@ public class Person {
 
 		return id;
 	}
+
+
+
 
 }
