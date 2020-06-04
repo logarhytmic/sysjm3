@@ -1,6 +1,7 @@
 package projekt.sysjm3.rest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -15,8 +16,6 @@ class RestApplicationTest {
 
 	@Autowired
 	private PersonRepository personRepo;
-
-
 
 	private Person person;
 
@@ -54,13 +53,13 @@ class RestApplicationTest {
 	@Test
 	@DisplayName("Test1")
 	public void testNumberOfRows() {
-		assertTrue(personRepo.findAll().size() == 3);
+		assertTrue(personRepo.findAll().equals(3));
 	}
 
 	@Test
 	@DisplayName("Test4")
 	public void testIfRowExists() {
-		assertFalse(personRepo.existsById(ssn));
+		assertFalse(personRepo.existsById(person.id));
 	}
 
 	@Test
