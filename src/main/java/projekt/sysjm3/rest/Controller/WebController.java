@@ -10,13 +10,10 @@ import projekt.sysjm3.rest.Service.PersonService;
 @Controller
 public class WebController {
 
-	@Autowired
-	PersonService personService;
 
 	@GetMapping("/")
-	public String home(Model model) {
-		model.addAttribute("persons", personService.getAllPersons());
-		return "index";
+	public String home() {
+	return "index";
 	}
 	
 
