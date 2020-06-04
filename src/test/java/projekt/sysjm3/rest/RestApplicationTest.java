@@ -1,21 +1,15 @@
 package projekt.sysjm3.rest;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import projekt.sysjm3.rest.Entity.Person;
 import projekt.sysjm3.rest.Repository.PersonRepository;
-
-import org.junit.jupiter.api.Test;
 
 class RestApplicationTest {
 
@@ -63,11 +57,11 @@ class RestApplicationTest {
 		assertTrue(personRepo.findAll().size() == 3);
 	}
 
-	@Test
-	@DisplayName("Test4")
-	public void testIfRowExists() {
-		assertFalse(personRepo.existsById(ssn));
-	}
+//	@Test
+//	@DisplayName("Test4")
+//	public void testIfRowExists() {
+//		assertFalse(personRepo.existsById(ssn));
+//	}
 
 	@Test
 	public void testGetExpectedRows() {
