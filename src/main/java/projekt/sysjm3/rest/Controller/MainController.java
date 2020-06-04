@@ -36,6 +36,6 @@ public class MainController {
 	@PostMapping("/persons")
 	private int savePerson(@RequestBody Person person) {
 		personService.saveOrUpdate(person);
-		return person.getId();
+		return 0;//person.getId();
 	}
 }
