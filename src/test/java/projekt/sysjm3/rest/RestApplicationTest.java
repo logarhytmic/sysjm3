@@ -91,7 +91,7 @@ class RestApplicationTest {
 	}
 
 	@Test
-	void testBooks() throws Exception {
+	void testAbout() throws Exception {
 		mockie.perform(get("/about")).andExpect(status().isOk()).andExpect(view().name("about"));
 	}
 
