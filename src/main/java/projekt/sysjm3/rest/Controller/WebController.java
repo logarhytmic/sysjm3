@@ -13,12 +13,19 @@ public class WebController {
 	@Autowired
 	PersonService personService;
 
+<<<<<<< Updated upstream
 	@GetMapping("/")
 	public String home(Model model) {
 		model.addAttribute("persons", personService.getAllPersons());
 		return "index";
+=======
+	@GetMapping("/index")
+	public String home() {
+	return "index";
+>>>>>>> Stashed changes
 	}
-	
-
-
+	@GetMapping ("/about")
+	public String about() {
+		return "about";
+	}
 }
