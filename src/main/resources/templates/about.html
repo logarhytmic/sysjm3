@@ -3,28 +3,39 @@
 <meta charset="utf-8">
 <title>About</title>
 <link rel="stylesheet" href="css/style.css">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     </head>
     
 <body>
 <div class="container">
 <div class="menu">
     <ul>
-         <li> <a href="index.html"> Home</a></li>
-        <li> <a href="/http://localhost:8080/h2-console">Database</a></li>
-        <li> <a href="about.html">About</a></li>
+         <li> <a th:href="@{/index}"> Home</a></li>
+        <li> <a href="/h2-console">Database</a></li>
+        <li> <a th:href="@{/about}"> About</a></li>
+        <li> <a href="https://peaceful-spire-35103.herokuapp.com/persons">Heroku</a></li>
     </ul>
     </div>    
     <div class="banner">
         <div class="app-text">
             <h1>WHO IS STEM?</h1>
-            <p>We are Emir, Tanvir, Mattias and Susanna.<br>
-           
+            <p>We are <b>Susanna, Tanvir, Emir and Mattias.</b>
+             STEM originally means family or tribe.<br> But it also is used in education where it stands for Science, Technology, Engineering <br>and Math(STEM).
+            For this project we have used GitHub where we did the sprintboard.<br>Through whole project we have had some struggles with the GitHub, like not having<br> right version or merge problems and everything else that came along through project.<br>
+            Another struggle we had that took time is how to write Tests. It took us a good while <br>to get it done. <br> It have been other bumps on the road, but we have been good at being there for each other.<br>
+                <b>Peace out!</b>
+                <br>
+                <br>
+                <br>       
+          
+<a class="github-button" href="https://github.com/SiggeCinnamon/sysjm3" aria-label="Follow @ntkme on GitHub">Follow @STEM</a>
             
             </p>
         </div>   
-        <div class="app-picture">
-            <img src="edu_ilastration.png">
+           <div class="app-gitpic">
+            <img th:src="@{pic/2.png}"/>
         </div>
+        
 </div>
 </div>
 </body>
