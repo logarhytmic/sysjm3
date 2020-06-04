@@ -24,11 +24,4 @@ class PersonRepositoryTest {
 		fail("Not yet implemented");
 	}
 
-	@Test
-	public void givenUserInDBWhenFindOneByNameThenReturnOptionalWithUser() {
-		Person person = new Person();
-		person.setFirstName("Stefan");
-		pr.save(new Person());
-
-	}
 }
