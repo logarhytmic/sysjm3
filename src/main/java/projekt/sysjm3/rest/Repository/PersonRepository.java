@@ -15,6 +15,6 @@ public interface PersonRepository extends CrudRepository<Person, Integer> {
 	
 	Person findById(long ssn);
 
-	BooleanSupplier existsById(long ssn);
+//	BooleanSupplier existsById(long ssn);
 	
 }
