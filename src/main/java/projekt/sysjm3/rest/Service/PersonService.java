@@ -4,7 +4,7 @@ import java.util.ArrayList;
 <<<<<<< HEAD
 import java.util.List;
 =======
->>>>>>> upstream/master
+>>>>>>> NotMaster
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 <<<<<<< HEAD
 
 =======
->>>>>>> upstream/master
+>>>>>>> NotMaster
 import projekt.sysjm3.rest.Entity.Person;
 import projekt.sysjm3.rest.Repository.PersonRepository;
 
@@ -28,7 +28,7 @@ public class PersonService {
 =======
     public ArrayList<Person> getAllPersons() {
         ArrayList<Person> persons = new ArrayList<Person>();
->>>>>>> upstream/master
+>>>>>>> NotMaster
         personRepository.findAll().forEach(person -> persons.add(person));
         return persons;
     }
@@ -51,5 +51,5 @@ public class PersonService {
 		personRepository.save(person);
 		
 	}
->>>>>>> upstream/master
+>>>>>>> NotMaster
 }

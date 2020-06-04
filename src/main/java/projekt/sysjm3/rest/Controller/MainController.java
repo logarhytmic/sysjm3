@@ -13,7 +13,7 @@ import java.util.function.Function;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
->>>>>>> upstream/master
+>>>>>>> NotMaster
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 <<<<<<< HEAD
 =======
 import org.springframework.web.bind.annotation.PutMapping;
->>>>>>> upstream/master
+>>>>>>> NotMaster
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,7 +29,7 @@ import projekt.sysjm3.rest.Entity.Person;
 <<<<<<< HEAD
 =======
 import projekt.sysjm3.rest.Repository.PersonRepository;
->>>>>>> upstream/master
+>>>>>>> NotMaster
 import projekt.sysjm3.rest.Service.PersonService;
 
 @RestController
@@ -48,7 +48,7 @@ public class MainController {
 
 	@GetMapping("/persons")
 	private ArrayList<Person> getAllPersons() {
->>>>>>> upstream/master
+>>>>>>> NotMaster
 		return personService.getAllPersons();
 	}
 
@@ -79,4 +79,4 @@ public class MainController {
 	}
 
 }
->>>>>>> upstream/master
+>>>>>>> NotMaster
