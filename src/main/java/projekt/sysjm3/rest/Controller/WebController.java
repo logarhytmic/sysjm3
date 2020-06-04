@@ -10,12 +10,9 @@ import projekt.sysjm3.rest.Service.PersonService;
 @Controller
 public class WebController {
 
-
 	@GetMapping("/")
 	public String home() {
 	return "index";
 	}
 	
-
-
 }

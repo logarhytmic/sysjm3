@@ -7,11 +7,9 @@ import projekt.sysjm3.rest.Entity.Person;
 
 @Repository
 public interface PersonRepository extends CrudRepository<Person, Integer> {
-
-
 	
 	Person findById(int id);
-
-
+	
+	
 	
 }
