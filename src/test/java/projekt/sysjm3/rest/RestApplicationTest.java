@@ -16,29 +16,29 @@ class RestApplicationTest {
 	@Autowired
 	private PersonRepository personRepo;
 
-	private static long ssn;
+
 
 	private Person person;
 
 	@BeforeAll
 	public void beforeAllTests() {
-		ssn = 1L;
 
 
-		person = new Person('1',"Mathias", "A", 20, 'm', ssn, "City", "Country");
+
+		person = new Person('1',"Mattias", "A", 20, 'm', 860215, "City", "Country");
 		personRepo.save(person);
 
-		person = new Person('2',"Emir", "M", 20, 'm', ssn + 1, "City", "Country");
+		person = new Person('2',"Emir", "M", 20, 'm', 860215 + 1, "City", "Country");
 		personRepo.save(person);
 
-		person = new Person('3',"Tanvir", "S", 20, 'm', ssn + 2, "City", "Country");
+		person = new Person('3',"Tanvir", "S", 20, 'm', 860215 + 2, "City", "Country");
 		personRepo.save(person);
 
-		person = new Person('4',"Susanna", "M", 20, 'm', ssn + 3, "City", "Country");
+		person = new Person('4',"Susanna", "M", 20, 'm', 860215 + 3, "City", "Country");
 		personRepo.save(person);
 		
 
-		person = new Person('5',"Jonas", "Sjöstedt", 41, 'm', ssn + 4, "Malmö", "Sweden");
+		person = new Person('5',"Jonas", "Sjöstedt", 41, 'm', 860215 + 4, "Malmö", "Sweden");
 		personRepo.save(person);
 
 	}
@@ -57,11 +57,11 @@ class RestApplicationTest {
 		assertTrue(personRepo.findAll().size() == 3);
 	}
 
-//	@Test
-//	@DisplayName("Test4")
-//	public void testIfRowExists() {
-//		assertFalse(personRepo.existsById(ssn));
-//	}
+	@Test
+	@DisplayName("Test4")
+	public void testIfRowExists() {
+		assertFalse(personRepo.existsById(ssn));
+	}
 
 	@Test
 	public void testGetExpectedRows() {
